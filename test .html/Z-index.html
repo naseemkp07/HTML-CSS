@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+     .container{
+        position: relative;
+
+        }
+        .pick-box{
+            position: relative;
+            background: rgb(236, 238, 237);
+            border: 2px solid palevioletred;
+            height: 100px;
+            margin: 30px;
+        }
+        .blue-box{
+            position: absolute;
+            background: lightgreen;
+            height: 60px;
+            width: 70px;
+            left: 50px;
+            top: 50px;
+        }
+        .gold-box{
+            position: absolute;
+            background: rgb(186, 11, 209);
+            width: 35% ;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overlapping elements</h1>
+
+    <p>If two positioned elements overlap each other without a z-index specified,
+    the element defined last in the HTML code will be shown on top:</p>
+    
+    <div class="container">
+      <div class="pick-box"> pick-box</div>
+      <div class="blue-box">blue-box box</div>
+      <div class="gold-box">  gold-box</div>
+    </div>
+</body>
+</html>
